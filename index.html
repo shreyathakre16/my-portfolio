@@ -14,16 +14,18 @@
        }
 
        body{
-        background-color: rgb(2, 7, 36);
+        background-color: rgb(5, 5, 48);
         color: white;
         font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
        }
        nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         height: 100px;
-        background-color: rgb(1, 20, 70);
+        background-color: rgb(23, 23, 80);
+        padding: 0 100px;
        }
        nav ul{
         display: flex;
@@ -32,10 +34,12 @@
        nav ul li{
         list-style: none;
         margin: 0 23px;
+        
        }
        nav ul li a{
         text-decoration: none;
         color: white;
+        font-size: 1.3rem;
        }
        nav ul li a:hover{
         color: red;
@@ -58,10 +62,10 @@
        }
 
     .hi {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  }
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+        }
 
 .name {
   font-size: 4rem;
@@ -78,13 +82,136 @@
     color: blueviolet;
  }
 
+      .secondsection{
+        display:flex;
+        justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .about-box {
+            background-color: rgb(224, 223, 223); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            box-shadow: 0px 4px 10px rgb(206, 203, 203);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            
+        }
+
+        .secondsection h1 {
+            font-size: 3rem;
+            font-family: "Roboto", sans-serif;  /* Different font for title */
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .secondsection p {
+            font-size: 1.3rem;
+            font-family: "Times new Roman", sans-serif;  /* Different font for paragraph */
+            line-height: 1.6;
+            color: black;
+            text-align: center;
+            max-width: 800px; /* Optional, for limiting paragraph width */
+        }
+
+        .resume-btn {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .resume-btn:hover {
+            background-color: darkviolet;
+        }
+
+        /* Style for the download link */
+        .resume-btn a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            background-color: blueviolet;
+        }
+
+        .resume-btn a:hover {
+            background-color: darkviolet;
+        }
+
+        .projects-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .projects-section h1{
+            font-size: 3rem;
+            font-family: "Roboto", sans-serif;  /* Different font for title */
+            margin-bottom: 80px;
+            color: #ffffff;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .project-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 28%; /* Each box takes up 28% of the container width */
+            transition: transform 0.3s ease;
+        }
+
+        .project-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-box h2 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-style: bold;
+            color: black;
+        }
+
+        .project-box p {
+            font-size: 1rem;
+            line-height: 1;
+            color: #333;
+        }
+        /* @media screen and (max-width: 768px) {
+            .project-box {
+                /* width: 100%; /* Make each box take up the full width on smaller screens */
+            /* }
+        } */ 
+
+        
+
+       
+
        
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="left">Portfolio</div>
+            <!-- <div class="left">Portfolio</div> -->
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -103,15 +230,49 @@
                 <p class="hi">Hi,</p>
                 <p class="name"><strong>I am <span class="purple">Shreya</span></strong></p>
                 <p class="role">&lt;engineer/developer&gt;</p>
-              <!-- Hi ,
-              <div>I am Shreya</div> 
-              <div>&ltengineer/developer&gt</div> -->
              </div>
              <div class="rightSection">
                 <img src="bgg.png" alt="">
              </div>
         </section>
+
+        <section id="about" class="secondsection">
+          <h1>About</h1>
+          <div class="about-box">
+          
+            <p> Greetings! I'm Shreya Thakre, an enthusiastic Electronics and Telecommunication Engineering student at Cummins College of Engineering for Women, Nagpur. As a fresher with a passion for innovation, I am keen on developing impactful solutions, particularly in Java-based applications.</p>
+            
+            <p>My academic project, Smart Personal Item Tracer with Mobile App Integration, highlights my proficiency in hardware-software integration, utilizing IoT principles and mobile application development to deliver user-centric solutions.</p>
+              
+            <p>With a strong commitment to continuous learning and a keen eye for detail, I actively explore emerging technologies to stay at the forefront of industry advancements and trends.</p>
+
+            <button class="resume-btn">
+                <a href="Shreya_Thakre(ETC).pdf" download="Shreya_Resume.pdf" target="_blank">View Resume</a>
+            </button>
+          
+          </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="project-box">
+                    <h2>Smart Personal Item Tracer With Mobile App Integration</h2>
+                    <p>Developing a solar-powered tracking device with Wi-Fi, reverse action, and offline functionality,
+                        enabling real-time, multi-device monitoring for enhanced security</p>
+                </div>
+                <div class="project-box">
+                    <h2>Blood Bank Management System</h2>
+                    <p>Developed a Java application with an SQL database for hospitals and patients to manage blood
+                        donors, search for donors, check stock, and update inventory.</p>
+                </div>
+            </div>
+        </section>
+        
+
     </main>
+  
+    
 </body>
 </html>
 <!-- abc -->
