@@ -14,7 +14,8 @@
        }
 
        body{
-        background-color: rgb(5, 5, 48);
+        /* background-color: rgb(5, 5, 48); */
+        background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
         color: white;
         font-family: "Poppins", sans-serif;
         scroll-behavior: smooth;
@@ -24,7 +25,7 @@
         justify-content: flex-end;
         align-items: center;
         height: 100px;
-        background-color: rgb(23, 23, 80);
+        background-color: #221e2e;
         padding: 0 100px;
        }
        nav ul{
@@ -45,6 +46,18 @@
         color: red;
         font-size: 1.5rem;
        }
+
+       header .leftSection {
+           margin-top: 50px;
+           text-align: center;
+       }
+       header .leftSection p {
+           margin: 10px 0;
+       }
+       .purple {
+           color: blueviolet;
+       }
+
        .left {
         font-size: 1.5rem;
        }
@@ -52,10 +65,13 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
-        margin: 50px 0;
+        margin: 0;
+        background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
+        padding: 50px;
        }
        .firstSectiondiv{
         width: 30%;
+        
        }
        .leftSection{
         font-size: 3rem;
@@ -93,7 +109,7 @@
         }
         
         .about-box {
-            background-color: rgb(224, 223, 223); /* Semi-transparent background */
+            background: linear-gradient(to bottom, #c7c7df, #50257b); /* Semi-transparent background */
             padding: 30px;
             border-radius: 10px;
             border: 2px solid #ffffff;
@@ -122,7 +138,7 @@
         }
 
         .resume-btn {
-            background-color: blueviolet;
+            background-color: black;
             color: white;
             padding: 10px 20px;
             font-size: 1rem;
@@ -144,7 +160,7 @@
             padding: 10px 20px;
             font-size: 1rem;
             border-radius: 5px;
-            background-color: blueviolet;
+            background-color: black;
         }
 
         .resume-btn a:hover {
@@ -166,8 +182,14 @@
         .projects-container {
             display: flex;
             justify-content: space-around;
-            gap: 40px;
+            gap: 10px;
             flex-wrap: wrap;
+            padding: 20px;
+    background: linear-gradient(to bottom, #c7c7df, #50257b);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .project-box {
@@ -201,7 +223,12 @@
             /* }
         } */ 
 
-        
+        footer {
+           background-color: rgb(23, 23, 80);
+           color: white;
+           text-align: center;
+           padding: 20px;
+            margin-top: 30px;}
 
        
 
@@ -249,8 +276,9 @@
             <button class="resume-btn">
                 <a href="Shreya_Thakre(ETC).pdf" download="Shreya_Resume.pdf" target="_blank">View Resume</a>
             </button>
-          
+            <!-- <img src="resumeimg.jpeg" alt=""> -->
           </div>
+          
         </section>
 
         <section id="projects" class="projects-section">
@@ -271,7 +299,12 @@
         
 
     </main>
-  
+    <footer>
+        <p>© 2024 Shreya Thakre | Follow me: 
+            <a href="#"><i class="fab fa-linkedin"></i></a> 
+            <a href="#"><i class="fab fa-github"></i></a>
+        </p>
+    </footer>
     
 </body>
 </html>
