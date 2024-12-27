@@ -188,7 +188,7 @@
     background: linear-gradient(to bottom, #c7c7df, #50257b);
     border-radius: 10px;
     margin: 20px auto;
-    width: 80%;
+    width: 40%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
@@ -224,11 +224,74 @@
         } */ 
 
         footer {
-           background-color: rgb(23, 23, 80);
+            background-color: #221e2e;
            color: white;
            text-align: center;
            padding: 20px;
             margin-top: 30px;}
+
+            
+    .contact-section {
+        background: linear-gradient(to bottom, #c7c7df, #50257b);
+        padding: 50px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(to bottom, #c7c7df, #50257b);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-form div {
+        width: 100%;
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form .send-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form .send-btn:hover {
+        background-color: darkviolet;
+    }
+
 
        
 
@@ -295,6 +358,25 @@
                         donors, search for donors, check stock, and update inventory.</p>
                 </div>
             </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
         </section>
         
 
