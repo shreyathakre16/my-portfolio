@@ -7,307 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-       *{
-        margin: 0;
-        padding: 0;
-       }
-
-       body{
-        /* background-color: rgb(5, 5, 48); */
-        background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
-        color: white;
-        font-family: "Poppins", sans-serif;
-        scroll-behavior: smooth;
-       }
-       nav{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100px;
-        background-color: #221e2e;
-        padding: 0 100px;
-       }
-       nav ul{
-        display: flex;
-        justify-content: center;
-       }
-       nav ul li{
-        list-style: none;
-        margin: 0 23px;
-        
-       }
-       nav ul li a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.3rem;
-       }
-       nav ul li a:hover{
-        color: red;
-        font-size: 1.5rem;
-       }
-
-       header .leftSection {
-           margin-top: 50px;
-           text-align: center;
-       }
-       header .leftSection p {
-           margin: 10px 0;
-       }
-       .purple {
-           color: blueviolet;
-       }
-
-       .left {
-        font-size: 1.5rem;
-       }
-       .firstSection{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
-        padding: 50px;
-       }
-       .firstSectiondiv{
-        width: 30%;
-        
-       }
-       .leftSection{
-        font-size: 3rem;
-       }
-
-    .hi {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-        }
-
-.name {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.role {
-  font-size: 2rem;
-  color: #ffffff;
-  margin: 0;
-}
- .purple{
-    color: blueviolet;
- }
-
-      .secondsection{
-        display:flex;
-        justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 90vh;
-            margin-top: 20px;
-            padding: 20px;
-        }
-        
-        .about-box {
-            background: linear-gradient(to bottom, #c7c7df, #50257b); /* Semi-transparent background */
-            padding: 30px;
-            border-radius: 10px;
-            border: 2px solid #ffffff;
-            box-shadow: 0px 4px 10px rgb(206, 203, 203);
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-            border-radius: 20px;
-            
-        }
-
-        .secondsection h1 {
-            font-size: 3rem;
-            font-family: "Roboto", sans-serif;  /* Different font for title */
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        .secondsection p {
-            font-size: 1.3rem;
-            font-family: "Times new Roman", sans-serif;  /* Different font for paragraph */
-            line-height: 1.6;
-            color: black;
-            text-align: center;
-            max-width: 800px; /* Optional, for limiting paragraph width */
-        }
-
-        .resume-btn {
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .resume-btn:hover {
-            background-color: darkviolet;
-        }
-
-        /* Style for the download link */
-        .resume-btn a {
-            text-decoration: none;
-            color: white;
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-            background-color: black;
-        }
-
-        .resume-btn a:hover {
-            background-color: darkviolet;
-        }
-
-        .projects-section {
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .projects-section h1{
-            font-size: 3rem;
-            font-family: "Roboto", sans-serif;  /* Different font for title */
-            margin-bottom: 80px;
-            color: #ffffff;
-        }
-
-        .projects-container {
-            display: flex;
-            justify-content: space-around;
-            gap: 10px;
-            flex-wrap: wrap;
-            padding: 20px;
-    background: linear-gradient(to bottom, #c7c7df, #50257b);
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 40%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .project-box {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 28%; /* Each box takes up 28% of the container width */
-            transition: transform 0.3s ease;
-        }
-
-        .project-box:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-box h2 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            font-style: bold;
-            color: black;
-        }
-
-        .project-box p {
-            font-size: 1rem;
-            line-height: 1;
-            color: #333;
-        }
-        /* @media screen and (max-width: 768px) {
-            .project-box {
-                /* width: 100%; /* Make each box take up the full width on smaller screens */
-            /* }
-        } */ 
-
-        footer {
-            background-color: #221e2e;
-           color: white;
-           text-align: center;
-           padding: 20px;
-            margin-top: 30px;}
-
-            
-    .contact-section {
-        background: linear-gradient(to bottom, #c7c7df, #50257b);
-        padding: 50px;
-        text-align: center;
-        color: white;
-        background: linear-gradient(to bottom, #c7c7df, #50257b);
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 30%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .contact-section h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .contact-form div {
-        width: 100%;
-        max-width: 500px;
-        text-align: left;
-    }
-
-    .contact-form label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-form .send-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-        color: white;
-        background-color: black;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .contact-form .send-btn:hover {
-        background-color: darkviolet;
-    }
-
-
-       
-
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
         <nav>
-            <!-- <div class="left">Portfolio</div> -->
+            <div class="left">shreya's Portfolio</div>
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#about1">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="/">Contact Me</a></li> -->
                 </ul>
                 
             </div>
@@ -315,52 +27,102 @@
     </header>
 
     <main>
+
+        <!-- info code -->
+
         <section class="firstSection">
              <div class="leftSection">
                 <p class="hi">Hi,</p>
-                <p class="name"><strong>I am <span class="purple">Shreya</span></strong></p>
-                <p class="role">&lt;engineer/developer&gt;</p>
+                <p class="name"><strong>I am <span class="purple">Shreya Thakre</span></strong></p>
+
+                <div class="dev">
+
+                    <span id="element"></span>
+                </div>
+
              </div>
+
+             <div class="dev">
+
+                <span id="element"></span>
+            </div>
+
+             <!-- photo code  -->
+
              <div class="rightSection">
                 <img src="bgg.png" alt="">
              </div>
         </section>
 
-        <section id="about" class="secondsection">
-          <h1>About</h1>
-          <div class="about-box">
-          
-            <p> Greetings! I'm Shreya Thakre, an enthusiastic Electronics and Telecommunication Engineering student at Cummins College of Engineering for Women, Nagpur. As a fresher with a passion for innovation, I am keen on developing impactful solutions, particularly in Java-based applications.</p>
-            
-            <p>My academic project, Smart Personal Item Tracer with Mobile App Integration, highlights my proficiency in hardware-software integration, utilizing IoT principles and mobile application development to deliver user-centric solutions.</p>
-              
-            <p>With a strong commitment to continuous learning and a keen eye for detail, I actively explore emerging technologies to stay at the forefront of industry advancements and trends.</p>
 
-            <button class="resume-btn">
-                <a href="Shreya_Thakre(ETC).pdf" download="Shreya_Resume.pdf" target="_blank">View Resume</a>
-            </button>
-            <!-- <img src="resumeimg.jpeg" alt=""> -->
-          </div>
-          
-        </section>
+<!--  About Section code -->
 
-        <section id="projects" class="projects-section">
-            <h1>Projects</h1>
-            <div class="projects-container">
-                <div class="project-box">
-                    <h2>Smart Personal Item Tracer With Mobile App Integration</h2>
-                    <p>Developing a solar-powered tracking device with Wi-Fi, reverse action, and offline functionality,
-                        enabling real-time, multi-device monitoring for enhanced security</p>
-                </div>
-                <div class="project-box">
-                    <h2>Blood Bank Management System</h2>
-                    <p>Developed a Java application with an SQL database for hospitals and patients to manage blood
-                        donors, search for donors, check stock, and update inventory.</p>
-                </div>
-            </div>
-        </section>
         
-        <section id="contact" class="contact-section">
+            <section id="about1" class="secondSec">
+                <div class="heading">
+                    About Me
+                </div>
+                <div class="about">
+                    <div>Greetings! I'm Shreya Thakre, an enthusiastic Electronics and Telecommunication Engineering student at Cummins College of Engineering for Women, Nagpur. As a fresher with a passion for innovation, I am keen on developing impactful solutions, particularly in Java-based applications.</div>
+                    <div>My academic project, Smart Personal Item Tracer with Mobile App Integration, highlights my proficiency in hardware-software integration, utilizing IoT principles and mobile application development to deliver user-centric solutions.</div>
+                    <div>ith a strong commitment to continuous learning and a keen eye for detail, I actively explore emerging technologies to stay at the forefront of industry advancements and trends.</div>
+                    <div class="resume">
+                        <button onclick="openResume()">My Resume</button>
+                    </div>
+                </div>
+    
+            </section>
+
+        <!-- project section code -->
+       
+
+        <section class="thirdSec">
+            <section id="projects" class="thirdSec">
+                <div class="heading1">
+                    My Projects
+                </div>
+                <div class="card">
+                    <img src="img2bb.jpg" alt="Website Image">
+
+                    <div class="card-content">
+                        <h1>Blood bank management System</h1>
+                        <p>Developed a Java application with an SQL database for hospitals and patients to manage blood
+                            donors, search for donors, check stock, and update inventory.</p>
+
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>SQL</span>
+
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/shreyathakre16/Blood-Bank-Management-System" target="_blank" class="github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="card">
+                    <div class="card-content">
+                        <h1>Smart personal item tracer with mobile App Integration</h1>
+                        <p>Developing a solar-powered tracking device with Wi-Fi, reverse action, and offline functionality,
+                            enabling real-time, multi-device monitoring for enhanced security.</p>
+                        
+                    
+                    </div>
+                    <img src="circuit diagram mega project.jpg" alt="circuit diagram">
+                </div>
+
+
+
+
+
+                
+                
+        
+
+        <!-- contact section code -->
+
+        <!-- <section id="contact" class="contact-section">
             <h1>Contact Me</h1>
             <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
                 <div>
@@ -377,17 +139,58 @@
                 </div>
                 <button type="submit" class="send-btn">Send</button>
             </form>
-        </section>
-        
+        </section>  -->
 
-    </main>
-    <footer>
-        <p>© 2024 Shreya Thakre | Follow me: 
-            <a href="#"><i class="fab fa-linkedin"></i></a> 
-            <a href="#"><i class="fab fa-github"></i></a>
-        </p>
+
+
+     </main>
+    
+     <!-- footer code   -->
+
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <!-- github -->
+
+                <li class="github"><a href="https://github.com/shreyathakre16"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" style="fill: white">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                            </path>
+                        </svg></a></li>
+
+                        <!-- linkedln -->
+
+                <li class="linkedin"><a href="https://www.linkedin.com/in/shreya-thakre-80495b227/"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: white">
+                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                            <path
+                                d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
+                            </path>
+                        </svg></a></li>
+            </ul>
+
+            <div class="copy">&copy; Shreya Thakre 2025</div>
+        </div>
+
+        <div class="scrollUp">
+            <p>Scroll Up!</p>
+            <svg fill="#ffffff" version="1.1" id="scrollToTopSvg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416.979 416.979" xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <path
+                            d="M208.489,416.979c115.146,0,208.49-93.344,208.49-208.489C416.979,93.344,323.635,0,208.489,0S0,93.343,0,208.489 C0,323.635,93.343,416.979,208.489,416.979z M127.24,219.452l68.259-118.21c2.68-4.641,7.632-7.499,12.99-7.499 s10.31,2.858,12.99,7.499l68.258,118.21c2.682,4.642,2.682,10.359,0.002,15c-2.68,4.642-7.631,7.501-12.99,7.501h-33.26v66.282 c0,8.284-6.715,15-15,15h-40c-8.284,0-15-6.716-15-15v-66.282H140.23c-5.359,0-10.312-2.859-12.991-7.501 C124.56,229.812,124.56,224.094,127.24,219.452z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
-<!-- abc -->

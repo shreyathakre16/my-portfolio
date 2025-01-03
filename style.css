@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+
+   body{
+    /* background-color: rgb(5, 5, 48); */
+    background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+   }
+
+   nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #221e2e;
+    padding: 0 100px;
+   }
+
+   nav ul{
+    display: flex;
+    justify-content: center;
+   }
+
+   nav ul li{
+    list-style: none;
+    margin: 0 23px;
+   }
+
+   nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: color 0.3s ease, font-size 0.3s ease;
+   }
+
+   nav ul li a:hover{
+    color: red;
+    font-size: 1.5rem;
+   }
+   
+   /* font for shreya's portfolio */
+   .left {
+    font-size: 1.5rem;
+   } 
+   
+
+/* font for hi,im shreya...... */
+
+   header.leftSection {
+       margin-top: 50px;
+       text-align: left;
+       margin: 10px 0;
+   }
+   
+   .firstSection{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 169px 0px;
+    background: linear-gradient(to right, rgb(19, 19, 48), #50257b);
+    padding: 0px 50px;
+   }
+   .firstSectiondiv{
+    width: 30%;
+    
+   }
+
+   .leftSection{
+    font-size: 3rem;
+   }
+
+  .hi {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    }
+
+  .name {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    }
+
+  .role {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+    }
+
+  .purple{
+      color: blueviolet;
+     }
+
+  
+    /* About Section  */
+    
+    .secondSec{
+        margin-left: 8%;
+    }
+
+    .heading{
+    
+        font-size: 2.6rem; 
+        width: 208px;
+        transition: 0.4s;
+        color: white;
+        text-align: left;
+    }
+
+    .heading:hover{
+    
+        transition: 0.4s;
+        font-size: 2.7rem; 
+    }
+
+    .about{
+        font-size: 1.5rem;
+        width: 75%;
+        margin: 45px;
+    }
+
+    .about div{
+        color: white;
+        margin: 69px 0px;
+    }
+
+    button{
+        font-family: 'bitter', sans-serif;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: 30px 0;
+        width: 140px;
+        border-radius: 10px;
+        background-color: #E0E1DD;
+        transition: 0.4s;
+        color:#415A77;
+    
+    }
+
+    button:hover{
+        color: #1B263B;
+        width: 150px;
+        transition: 0.4s;
+    }
+
+
+
+
+    /*  Contact Section */
+
+/* .contact-section {
+    background: linear-gradient(to bottom, #c7c7df, #50257b);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, #c7c7df, #50257b);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+.contact-form div {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.contact-form .send-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.contact-form .send-btn:hover {
+    background-color: darkviolet;
+  }  
+       */
+
+  /*  Footer Section */
+
+.footer{
+    background-color: #221e2e;
+    height: 90px;
+  }
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container ul li{
+    list-style: none;
+    margin: 10px;
+  }
+.container ul li svg{
+    width: 30px;
+    height: 30px;
+ }
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+.scrollUp svg{
+    width: 30px;
+    height: 30px;
+ }
+.scrollUp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.scrollUp p{
+    margin: 7px;
+ }
+
+ /* project heading */
+
+ .heading1{
+    margin-left: 8%;
+    font-size: 2.6rem; 
+    width: 335px;
+    transition: 0.4s;
+    color: white;
+  }
+
+.heading1:hover{
+
+    font-size: 2.7rem;
+    transition: 0.4s;
+}
+
+ /* project card */
+
+ .card {
+    margin: 45px 12%;
+    display: flex;
+    background-color: #744d943b;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50%;
+    object-fit: cover;
+    margin: 35px;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.card-content h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tags span {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+.links a.github {
+    background-color: #6c757d;
+}
+
+.links a.github:hover {
+    background-color: #5a6268;
+}
+
